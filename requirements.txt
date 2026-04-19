@@ -1,0 +1,9 @@
+# Python 3.10+ for ML training / inference. From this repo root:
+#   python -m venv .venv
+#   .venv\Scripts\activate   # Windows
+#   pip install -r requirements.txt
+
+numpy>=1.24.0,<3
+pandas>=2.0.0,<3
+scikit-learn>=1.3.0,<2
+xgboost>=2.0.0,<4
