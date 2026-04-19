@@ -1,0 +1,73 @@
+{
+  "features": [
+    "category_id",
+    "days_since_publish",
+    "likes_per_view",
+    "comments_per_view",
+    "like_comment_ratio",
+    "views_per_day",
+    "log_views",
+    "log_vpd",
+    "publish_hour",
+    "publish_dayofweek",
+    "publish_period",
+    "is_weekend",
+    "title_length",
+    "title_word_count",
+    "title_caps_ratio",
+    "title_has_exclaim",
+    "title_has_question",
+    "title_has_number",
+    "title_evergreen_count",
+    "title_timely_count",
+    "cat_trend_p10",
+    "cat_trend_p50",
+    "cat_trend_p90",
+    "cat_trend_spread"
+  ],
+  "fill_values": {
+    "cat_trend_p10": 5.949,
+    "cat_trend_p50": 13.873,
+    "cat_trend_p90": 23.914,
+    "cat_trend_spread": 17.885
+  },
+  "best_params": {
+    "subsample": 0.8,
+    "reg_lambda": 0.5,
+    "reg_alpha": 0.5,
+    "min_child_weight": 3,
+    "max_depth": 7,
+    "learning_rate": 0.05,
+    "gamma": 0.5,
+    "colsample_bytree": 0.6
+  },
+  "best_iteration": 490,
+  "num_class": 3,
+  "class_labels": [
+    "Fading \u2014 low sustained views/day after trending ends",
+    "Steady \u2014 moderate post-trend velocity",
+    "Thriving \u2014 high post-trend velocity"
+  ],
+  "feature_importance_top5": [
+    {
+      "feature": "views_per_day",
+      "importance": 0.2162759155035019
+    },
+    {
+      "feature": "log_vpd",
+      "importance": 0.20663365721702576
+    },
+    {
+      "feature": "cat_trend_p90",
+      "importance": 0.0592983178794384
+    },
+    {
+      "feature": "title_timely_count",
+      "importance": 0.04718656465411186
+    },
+    {
+      "feature": "cat_trend_spread",
+      "importance": 0.04566650092601776
+    }
+  ]
+}

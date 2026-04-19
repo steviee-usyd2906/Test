@@ -47,6 +47,4 @@ __pycache__/
 *.py[cod]
 /ml/data/*.csv
 
-# ML model + meta JSON (regenerate: see SETUP.md)
-/models/*.json
-!models/.gitkeep
+

@@ -1,0 +1,75 @@
+{
+  "features": [
+    "category_id",
+    "publish_hour",
+    "publish_dayofweek",
+    "publish_period",
+    "is_weekend",
+    "title_length",
+    "title_word_count",
+    "title_caps_ratio",
+    "title_has_exclaim",
+    "title_has_question",
+    "title_has_number",
+    "title_has_emoji",
+    "channel_views",
+    "channel_subscribers",
+    "channel_videos",
+    "subs_per_video",
+    "views_per_video",
+    "log_subscribers",
+    "log_channel_views",
+    "cat_trend_p10",
+    "cat_trend_p50",
+    "cat_trend_p90",
+    "cat_trend_spread"
+  ],
+  "fill_values": {
+    "channel_views": 288722463.0,
+    "channel_subscribers": 393000.0,
+    "channel_videos": 728.0,
+    "cat_trend_p10": 3.962,
+    "cat_trend_p50": 5.561,
+    "cat_trend_p90": 10.775,
+    "cat_trend_spread": 6.779999999999999
+  },
+  "scale_pos_weight": 1.2458676615368671,
+  "best_params": {
+    "subsample": 0.7,
+    "reg_lambda": 2.0,
+    "reg_alpha": 1.0,
+    "min_child_weight": 5,
+    "max_depth": 7,
+    "learning_rate": 0.1,
+    "gamma": 0,
+    "colsample_bytree": 0.5
+  },
+  "best_iteration": 495,
+  "virality_top_features": [
+    {
+      "feature": "publish_dayofweek",
+      "importance": 0.09128372371196747,
+      "hint": "Day of week shifts audience availability and browse patterns."
+    },
+    {
+      "feature": "cat_trend_spread",
+      "importance": 0.08588927984237671,
+      "hint": "How variable trending speed is within the category (risk/volatility proxy)."
+    },
+    {
+      "feature": "cat_trend_p50",
+      "importance": 0.07327155768871307,
+      "hint": "Typical category time-to-trend dynamics vs your timing signals."
+    },
+    {
+      "feature": "cat_trend_p90",
+      "importance": 0.06348606944084167,
+      "hint": "Slow-trend tail for the category\u2014helps calibrate patience vs burst potential."
+    },
+    {
+      "feature": "channel_videos",
+      "importance": 0.05539216846227646,
+      "hint": "Catalog size changes per-video attention and posting cadence effects."
+    }
+  ]
+}
